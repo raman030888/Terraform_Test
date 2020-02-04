@@ -12,4 +12,3 @@ module "infra" {
   ec2type      = "t2.micro"
   bucketname   = "test_bucket"
 }
-
