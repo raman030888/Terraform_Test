@@ -1,7 +1,8 @@
-This Terraform code is for test purpose
+# This Terraform code is for test purpose
 
-To do the deployment in DEV environment
+To do the deployment in DEV environment.
 
+```hcl
 module "infra" {
   source       = "./dev"
   vpc_id       = "vpc-id"
@@ -16,9 +17,11 @@ module "infra" {
   ec2type      = "t2.micro"
   bucketname   = "dev-test_bucket"
 }
+```
 
-To do the deployment in STAGE environment
 
+To do the deployment in Stage environment.
+```hcl
 module "infra" {
   source       = "./stage"
   vpc_id       = "vpc-id"
@@ -33,9 +36,11 @@ module "infra" {
   ec2type      = "t2.micro"
   bucketname   = "stage-test_bucket"
 }
+```
 
 To do the deployment in PROD environment
 
+```hcl
 module "infra" {
   source       = "./prod"
   vpc_id       = "vpc-id"
@@ -50,3 +55,6 @@ module "infra" {
   ec2type      = "t2.micro"
   bucketname   = "prod-test_bucket"
 }
+```
+
+## Notes
